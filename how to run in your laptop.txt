@@ -1,22 +1,54 @@
-ok so here 
-Webcam → YOLO Detection → Attendance Logic → SQLite Database → Flask Server → Web Dashboard
+AI Exam Hall Monitoring System
+Webcam → YOLO Detection → Cheating Logic → SQLite Database → Flask Server → Web Dashboard
 
-process to setup in new laptop -->
-Create venv:
+PROCESS TO SETUP IN NEW LAPTOP
+1) Open project folder in VS Code
+
+2) Create virtual environment:
 python -m venv venv
 
-Activate venv:
+3) Activate virtual environment:
 venv\Scripts\activate
 
-pip install ultralytics opencv-python flask
+4) Install required libraries:
+python -m pip install ultralytics opencv-python flask
 
-test YOLO webcam - python detect.py
+5) Run YOLO live exam hall detection:
+python exam_detect.py
 
-Database intialise -python database.py
+(Press 'Q' to quit webcam window)
 
-Run Detection + Save Attendance - python detect_and_save.py
 
-finally run python app.py and open link in browser .
+6) Initialize database (only first time):
+python database.py
+
+
+7) Run detection + save cheating logs:
+python exam_detect_and_save.py
+
+(Press 'S' to save log)
+(Press 'Q' to quit)
+
+
+8) Run Flask web dashboard:
+python app.py
+
+
+9) Open browser and visit:
+http://127.0.0.1:5000/
+
+
+
+AI_Exam_Hall_Monitoring/
+│
+├── exam_detect.py
+├── exam_detect_and_save.py
+├── database.py
+├── app.py
+├── templates/
+│   └── index.html
+└── yolov8n.pt
+
 
 
 Thats all!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! !!!!!!!!!!!!!!!!!!!!!Dt- 13-01-2026 Sagnik Sannigrahi
