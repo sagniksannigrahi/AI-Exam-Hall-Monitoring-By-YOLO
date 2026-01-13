@@ -1,0 +1,22 @@
+ok so here 
+Webcam → YOLO Detection → Attendance Logic → SQLite Database → Flask Server → Web Dashboard
+
+process to setup in new laptop -->
+Create venv:
+python -m venv venv
+
+Activate venv:
+venv\Scripts\activate
+
+pip install ultralytics opencv-python flask
+
+test YOLO webcam - python detect.py
+
+Database intialise -python database.py
+
+Run Detection + Save Attendance - python detect_and_save.py
+
+finally run python app.py and open link in browser .
+
+
+Thats all!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! !!!!!!!!!!!!!!!!!!!!!Dt- 13-01-2026 Sagnik Sannigrahi
